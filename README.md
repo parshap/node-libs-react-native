@@ -50,11 +50,6 @@ Some modules have mocks in the `mock` directory. These are replacements with min
 
 ## Outdated versions
 
-### `buffer`
-
-The current `buffer` implementation uses feross/buffer@4.x because feross/buffer@5.x relies on [typed arrays](https://github.com/feross/buffer/commit/5daca86b7cd5d2b8ccb167534d47421029f639e9#commitcomment-19698936).
-This will be dropped as soon as IE9 is not a typical browser target anymore.
-
 ### `punycode`
 
 The current `punycode` implementation uses bestiejs/punycode.js@1.x because bestiejs/punycode.js@2.x requires modern JS engines that understand `const` and `let`.
