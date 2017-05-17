@@ -20,7 +20,7 @@ Some modules have mocks in the `mock` directory. These are replacements with min
 | cluster | --- | --- |
 | console | [Raynos/console-browserify](https://github.com/Raynos/console-browserify) | [console.js](./mock/console.js) |
 | constants | [juliangruber/constants-browserify](https://github.com/juliangruber/constants-browserify) | --- |
-| crypto | [crypto-browserify/crypto-browserify](https://github.com/crypto-browserify/crypto-browserify) | --- |
+| crypto | [mvayngrib/react-native-crypto](https://github.com/mvayngrib/react-native-crypto) | --- |
 | dgram | --- | --- |
 | dns | --- | [dns.js](./mock/dns.js) |
 | domain | [bevry/domain-browser](https://github.com/bevry/domain-browser) | --- |
