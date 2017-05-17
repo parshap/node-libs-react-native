@@ -1,6 +1,6 @@
 # node-libs-react-native
 
-Node code modules for React Native. This is a fork of [node-libs-browser][] with minor modifications to use packages supported in React native.
+Node code modules for React Native. This is a fork of [node-libs-browser][] with minor modifications to use packages supported in React Native.
 
 [node-libs-browser]: https://www.npmjs.com/package/node-libs-browser
 
@@ -54,6 +54,8 @@ Some modules have mocks in the `mock` directory. These are replacements with min
 
 The current `punycode` implementation uses bestiejs/punycode.js@1.x because bestiejs/punycode.js@2.x requires modern JS engines that understand `const` and `let`.
 It will be removed someday since it has already been [deprecated from the node API](https://nodejs.org/api/punycode.html).
+
+## Other Modules
 
 ## License
 
