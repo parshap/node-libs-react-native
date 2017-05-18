@@ -86,6 +86,20 @@ link`.
 
 [react-native-tcp]: https://github.com/PeelTechnologies/react-native-tcp
 
+## Globals
+
+React Native does have certain globals that modules may expect
+(`Buffer`, `process`, etc.). The
+[`node-libs-react-native/globals`][globals] module in this package will
+shim the global environment to add these globals.  Simply require (or
+import) this module in your app before anything else.
+
+[globals]: ./globals.js
+
+```js
+require('node-libs-react-native/globals');
+```
+
 ## Credit
 
 This is a fork of [node-libs-browser][] with minor modifications. Thanks
