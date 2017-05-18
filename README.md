@@ -37,7 +37,7 @@ Some modules have mocks in the `mock` directory. These are replacements with min
 | querystring | [mike-spainhower/querystring](https://github.com/mike-spainhower/querystring) | --- |
 | readline | --- | --- |
 | repl | --- | --- |
-| stream | [substack/stream-browserify](https://github.com/substack/stream-browserify) | --- |
+| stream | [nodejs/readable-stream](https://github.com/nodejs/readable-stream) | --- |
 | string_decoder | [rvagg/string_decoder](https://github.com/rvagg/string_decoder) | --- |
 | sys | [defunctzombie/node-util](https://github.com/defunctzombie/node-util) | --- |
 | timers | [jryans/timers-browserify](https://github.com/jryans/timers-browserify) | --- |
