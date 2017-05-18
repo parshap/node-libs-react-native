@@ -45,7 +45,7 @@ Some modules have mocks in the `mock` directory. These are replacements with min
 | tty | [substack/tty-browserify](https://github.com/substack/tty-browserify) | [tty.js](./mock/tty.js) |
 | url | [defunctzombie/node-url](https://github.com/defunctzombie/node-url) | --- |
 | util | [defunctzombie/node-util](https://github.com/defunctzombie/node-util) | --- |
-| vm | [substack/vm-browserify](https://github.com/substack/vm-browserify) | --- |
+| vm | --- | --- |
 | zlib | [devongovett/browserify-zlib](https://github.com/devongovett/browserify-zlib) | --- |
 
 ## Outdated versions
