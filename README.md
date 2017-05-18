@@ -4,9 +4,15 @@ Node code modules for React Native. This is a fork of [node-libs-browser][] with
 
 [node-libs-browser]: https://www.npmjs.com/package/node-libs-browser
 
-The node core libs for React Native.
-
 [![dependencies status](http://david-dm.org/parshap/node-libs-react-native.png)](http://david-dm.org/parshap/node-libs-react-native)
+
+## Installation
+
+```
+npm install --save node-libs-react-native
+```
+
+## Usage
 
 Exports a hash [object] of absolute paths to each lib, keyed by lib names. Modules without React Native replacements are `null`.
 
