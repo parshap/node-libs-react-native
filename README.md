@@ -54,13 +54,6 @@ Some modules have mocks in the `mock` directory. These are replacements with min
 | vm | --- | --- |
 | zlib | [devongovett/browserify-zlib](https://github.com/devongovett/browserify-zlib) | --- |
 
-## Outdated versions
-
-### `punycode`
-
-The current `punycode` implementation uses bestiejs/punycode.js@1.x because bestiejs/punycode.js@2.x requires modern JS engines that understand `const` and `let`.
-It will be removed someday since it has already been [deprecated from the node API](https://nodejs.org/api/punycode.html).
-
 ## Other Modules
 
 ### `dgram`
