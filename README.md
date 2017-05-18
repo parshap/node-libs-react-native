@@ -57,6 +57,43 @@ It will be removed someday since it has already been [deprecated from the node A
 
 ## Other Modules
 
+### `dgram`
+
+[react-native-udp][] implements Node's `dgram` API, but is not included
+here due to its native implementation and need to use `react-native
+link`.
+
+[react-native-udp]: https://github.com/tradle/react-native-udp
+
+### `fs`
+
+[react-native-fs][] implement's Node's `fs` API, but is not included
+here due to its native implementation and need to use `react-native
+link`.
+
+[react-native-fs]: https://github.com/itinance/react-native-fs
+
+[react-native-level-fs][] provides an alternative pure JavaScript
+implementation, using AsyncStorage as the underlying storage mechanism.
+
+[react-native-level-fs]: https://github.com/tradle/react-native-level-fs
+
+### `net`
+
+[react-native-tcp][] implement's Node's `net` API, but is not included
+here due to its native implementation and need to use `react-native
+link`.
+
+[react-native-tcp]: https://github.com/PeelTechnologies/react-native-tcp
+
+## Credit
+
+This is a fork of [node-libs-browser][] with minor modifications. Thanks
+to [the contributors there][node-libs-browser contribs] for having done
+most of the work.
+
+[node-libs-browser contribs]: https://github.com/webpack/node-libs-browser/graphs/contributors
+
 ## License
 
 MIT
