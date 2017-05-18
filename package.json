@@ -1,11 +1,11 @@
 {
-  "name": "node-libs-browser",
-  "version": "2.0.0",
+  "name": "node-libs-react-native",
+  "version": "0.0.0",
   "author": "Tobias Koppers @sokra",
-  "description": "The node core libs for in browser usage.",
+  "description": "Node core modules for React Ntaive",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webpack/node-libs-browser.git"
+    "url": "git+https://github.com/parshap/node-libs-react-native.git"
   },
   "dependencies": {
     "assert": "^1.4.1",
@@ -31,17 +31,17 @@
     "url": "^0.11.0",
     "util": "^0.10.3"
   },
-  "homepage": "http://github.com/webpack/node-libs-browser",
+  "homepage": "http://github.com/parshap/node-libs-react-native",
   "main": "index.js",
   "files": [
     "index.js",
     "mock/"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webpack/node-libs-browser/issues"
+    "url": "https://github.com/parshap/node-libs-react-native/issues"
   }
 }
