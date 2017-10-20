@@ -35,6 +35,7 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "globals.js",
     "mock/"
   ],
   "scripts": {
