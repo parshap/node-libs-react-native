@@ -1,6 +1,6 @@
 {
   "name": "node-libs-react-native",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Tobias Koppers @sokra",
   "description": "Node core modules for React Native",
   "repository": {
