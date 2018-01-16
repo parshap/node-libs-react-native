@@ -33,10 +33,6 @@
   },
   "homepage": "http://github.com/parshap/node-libs-react-native",
   "main": "index.js",
-  "files": [
-    "index.js",
-    "mock/"
-  ],
   "scripts": {
     "test": "node index.js"
   },
