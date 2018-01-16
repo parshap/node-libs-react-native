@@ -1,10 +1,8 @@
 # node-libs-react-native
 
-Node code modules for React Native. This is a fork of [node-libs-browser][] with minor modifications to use packages supported in React Native.
+This package provides React Native compatible implementations of Node core modules like `stream` and `http`. This is a fork of [node-libs-browser][] with a few packages swapped to be compatible in React Native.
 
 [node-libs-browser]: https://www.npmjs.com/package/node-libs-browser
-
-[![dependencies status](http://david-dm.org/parshap/node-libs-react-native.png)](http://david-dm.org/parshap/node-libs-react-native)
 
 ## Installation
 
@@ -14,11 +12,42 @@ npm install --save node-libs-react-native
 
 ## Usage
 
-Exports a hash [object] of absolute paths to each lib, keyed by lib names. Modules without React Native replacements are `null`.
+This package exports a mapping of absolute paths to each module implementation, keyed by module name. Modules without React Native compatible implementations are `null`.
 
-Some modules have mocks in the `mock` directory. These are replacements with minimal functionality.
+These modules can be used with React Native Packager's `rn-cli.config.js` or Webpack's `resolve.alias`.
 
-| lib name | React Native implementation | mock implementation |
+### Usage with React Native Packager
+
+Add a `rn-cli.config.js` file in the root directory of your React Native project and set `extraNodeModules`:
+
+```js
+// rn-cli.config.js
+module.exports = {
+  extraNodeModules: require('node-libs-react-native'),
+};
+```
+
+For more information, see this post on [Node core modules in React Native][post].
+
+[post]: https://gist.github.com/parshap/e3063d9bf6058041b34b26b7166fd6bd
+
+### Globals
+
+Node has certain globals that modules may expect, such as `Buffer` or `process`. React Native does not provide these globals. The [`node-libs-react-native/globals`][globals] module in this package will shim the global environment to add these globals. Just require (or import) this module in your app before anything else.
+
+[globals]: ./globals.js
+
+```js
+require('node-libs-react-native/globals');
+// ...
+require('./app.js');
+```
+
+## Modules
+
+The following are the module implementations provided by this package. Some modules also have a "mock" implementation provided in the `mock` directory. These are replacements with minimal functionality.
+
+| Module | RN-compatible | Mock |
 |:--------:|:----------------------:|:-------------------:|
 | assert | [defunctzombie/commonjs-assert](https://github.com/defunctzombie/commonjs-assert) | --- |
 | buffer | [feross/buffer](https://github.com/feross/buffer) | [buffer.js](./mock/buffer.js) |
@@ -54,7 +83,11 @@ Some modules have mocks in the `mock` directory. These are replacements with min
 | vm | --- | --- |
 | zlib | [devongovett/browserify-zlib](https://github.com/devongovett/browserify-zlib) | --- |
 
-## Other Modules
+## Other React Native Modules
+
+These are other React Native packages that implement Node core related
+modules. They are not included in node-libs-react-native, but you may
+find them useful separately.
 
 ### `dgram`
 
@@ -85,27 +118,9 @@ link`.
 
 [react-native-tcp]: https://github.com/PeelTechnologies/react-native-tcp
 
-## Globals
-
-React Native does have certain globals that modules may expect
-(`Buffer`, `process`, etc.). The
-[`node-libs-react-native/globals`][globals] module in this package will
-shim the global environment to add these globals.  Simply require (or
-import) this module in your app before anything else.
-
-[globals]: ./globals.js
-
-```js
-require('node-libs-react-native/globals');
-```
-
 ## Credit
 
-This is a fork of [node-libs-browser][] with minor modifications. Thanks
-to [the contributors there][node-libs-browser contribs] for having done
-most of the work.
-
-[node-libs-browser contribs]: https://github.com/webpack/node-libs-browser/graphs/contributors
+This is a fork of [node-libs-browser][] with minor modifications and packages swapped out for React Native implementations. Thanks to those package authors for doing the hard work.
 
 ## License
 
