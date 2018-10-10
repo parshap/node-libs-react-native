@@ -22,7 +22,7 @@
     "punycode": "^2.1.0",
     "querystring-es3": "^0.2.0",
     "react-native-crypto": "^2.0.1",
-    "react-native-randombytes": "^2.2.0",
+    "react-native-randombytes": "^3.5.1",
     "readable-stream": "^2.2.9",
     "stream-http": "^2.3.1",
     "string_decoder": "^1.0.3",
