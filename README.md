@@ -18,12 +18,14 @@ These modules can be used with React Native Packager's `rn-cli.config.js` or Web
 
 ### Usage with React Native Packager
 
-Add a `rn-cli.config.js` file in the root directory of your React Native project and set `extraNodeModules`:
+Add a `rn-cli.config.js` file in the root directory of your React Native project and set `resolver.extraNodeModules`:
 
 ```js
 // rn-cli.config.js
 module.exports = {
-  extraNodeModules: require('node-libs-react-native'),
+  resolver: {
+    extraNodeModules: require('node-libs-react-native'),
+  },
 };
 ```
 
