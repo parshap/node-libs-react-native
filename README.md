@@ -14,14 +14,14 @@ npm install --save node-libs-react-native
 
 This package exports a mapping of absolute paths to each module implementation, keyed by module name. Modules without React Native compatible implementations are `null`.
 
-These modules can be used with React Native Packager's `rn-cli.config.js` or Webpack's `resolve.alias`.
+These modules can be used with React Native Packager's `metro.config.js` or Webpack's `resolve.alias`.
 
 ### Usage with React Native Packager
 
-Add a `rn-cli.config.js` file in the root directory of your React Native project and set `resolver.extraNodeModules`:
+Add a `metro.config.js` file in the root directory of your React Native project and set `resolver.extraNodeModules`:
 
 ```js
-// rn-cli.config.js
+// metro.config.js
 module.exports = {
   resolver: {
     extraNodeModules: require('node-libs-react-native'),
