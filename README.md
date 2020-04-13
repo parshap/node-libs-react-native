@@ -82,7 +82,7 @@ The following are the module implementations provided by this package. Some modu
 | tty | [substack/tty-browserify](https://github.com/substack/tty-browserify) | [tty.js](./mock/tty.js) |
 | url | [defunctzombie/node-url](https://github.com/defunctzombie/node-url) | --- |
 | util | [defunctzombie/node-util](https://github.com/defunctzombie/node-util) | --- |
-| vm | --- | --- |
+| vm | --- | [vm.js](./mock/vm.js) |
 | zlib | [devongovett/browserify-zlib](https://github.com/devongovett/browserify-zlib) | --- |
 
 ## Other React Native Modules
