@@ -1,5 +1,5 @@
 global.Buffer = require('buffer').Buffer;
-global.process = require('process');
+global.process =  global.process || require('process');
 
 // Needed so that 'stream-http' chooses the right default protocol.
 global.location = {
